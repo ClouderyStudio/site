@@ -183,11 +183,11 @@
       />
       <div className="relative z-10 max-w-3xl mx-auto">
         <div className="max-w-3xl mx-auto">
-          <span
-            class="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10"
-          >
-            云术工作室
-          </span>
+          <img
+            src="https://oss.cldery.com/web/site/logo.png"
+            alt="Logo"
+            className="mx-auto h-32 w-90"
+          />
           <h2 className="text-xl md:text-2xl mt-4 text-gray-600 dark:text-gray-300 font-light">
             {{ studioInfo.tagline }}
           </h2>
