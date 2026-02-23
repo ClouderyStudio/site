@@ -1,8 +1,7 @@
 <template>
   <Primitive
     data-slot="container"
-    :data-constrained="constrained"
-    :class="styles({ class: props.class, constrained })"
+    :class="styles({ class: props.class })"
     v-bind="forwarded"
   >
     <slot />
@@ -20,7 +19,6 @@
         /** Custom class(es) to add to the element */
         class?: HTMLAttributes["class"];
         /** Whether to constrain the width of the container */
-        constrained?: boolean;
       }
     >(),
     {
@@ -28,18 +26,9 @@
     }
   );
 
-  const forwarded = reactiveOmit(props, "class", "constrained");
+  const forwarded = reactiveOmit(props, "class");
 
   const styles = tv({
-    base: "mx-auto w-full max-w-7xl 2xl:max-w-(--breakpoint-2xl)",
-    variants: {
-      constrained: {
-        true: "sm:px-6",
-        false: "px-4 sm:px-6",
-      },
-    },
-    defaultVariants: {
-      constrained: false,
-    },
+    base: "mx-auto w-full"
   });
 </script>

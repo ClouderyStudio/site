@@ -12,7 +12,6 @@
       :while-in-view="getAnimate()"
       :transition="{
         duration: props.duration,
-        easing: 'easeInOut',
         delay: props.delay * index,
       }"
     >
