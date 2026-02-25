@@ -44,7 +44,7 @@
         "辽阔二级域名分发平台，提供免费二级域名注册、DNS解析和API接口，拥有诸如fucku.top、frp.cx等热门域名，适合个人和小型项目使用。",
       tags: ["Domain", "Free", "API", "DNS"],
       icon: "mdi:domain",
-      view: "https://lkdns.top",
+      view: "https://lkdns.org",
       image: null,
       category: "Web应用",
     },
@@ -156,7 +156,7 @@
       name: "辽阔DNS",
       logo: "https://oss.cldery.com/web/site/partners/lkdns.ico",
       icon: "mdi:earth",
-      website: "https://lkdns.top",
+      website: "https://lkdns.org",
     },
   ];
 </script>
